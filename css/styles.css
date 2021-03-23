@@ -6,14 +6,31 @@
 
 html {
     background-color: #fff;
+}
+
+body {
     color: #000;
-    font-family: "Josefin Sans", "Roboto", Arial, Helvetica, sans-serif;
+    font-family: "Josefin Sans", "Roboto", sans-serif;
     font-weight: 300;
     font-size: 14px;
     text-rendering: optimizeLegibility;
 }
+
+/* --- Header --- */
+
+.logo {
+    display: flex;
+    background-size: cover;
+    background-position: top;
+    height: 100px;
+}
+
 nav {
     display: flex;
+}
+
+.nav-items {
+    list-style: none;
 }
 
 header {
@@ -21,6 +38,7 @@ header {
     background-image: url(/img/trekking_main.jpg);
     background-size: cover;
     background-position: center;
+    text-align: center;
     height: 100vh;
     justify-content: center;
 }
