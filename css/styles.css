@@ -1,49 +1,93 @@
 * {
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
     box-sizing: border-box;
 }
 
 html {
     background-color: #fff;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
 }
 
 body {
     color: #000;
-    font-family: "Josefin Sans", "Roboto", sans-serif;
+    font-family: 'Josefin Sans', 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     text-rendering: optimizeLegibility;
 }
 
 /* --- Header --- */
 
-header {
-    display: block;
+.navbar {
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url(/img/trekking_main.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    height: 100vh;
 }
 
 nav {
-    display: flex;
     background-color: #fff;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.logo {
-    height: 100px;
-    width: auto;
+.logo{
+    height: 50px;
+    width: 100px;
     margin-left: 1px;
 }
 
 nav ul {
+    display: flex;
     list-style: none;
     width: 100%;
     height: 100%;
     padding-right: 16px;
+}
+
+.mobile-nav-icon {
+    display: none;
+}
+
+.hero-box {
+    background-image: url(/img/trekking_main.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    height: 100vh;
+}
+
+.hero-text {
+    color: #fff;
+    font-family: 'Josefin Sans';
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* --- Mobile --- */
+@media (min-width: 320px) {
+    nav ul {
+
+    }
+
+    .mobile-nav-icon {
+        display: inline;
+    }
+}
+
+/* --- Small tablets ---*/
+@media (min-width: 768px) {
+
+}
+
+/* --- Tablets / Desktops ---*/
+@media (min-width: 1024px) {
+
 }
