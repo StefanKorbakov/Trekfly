@@ -7,19 +7,21 @@ function open() {
     navItems.style.top = '0%';
     navOpen.style.display = 'none';
     navClose.style.display = 'flex';
-    if (mediaQuery.matches) {
-        navClose.style.display = 'none'
-    }
 }
 
 function close() {
     navItems.style.top = '-100%';
     navClose.style.display = 'none';
     navOpen.style.display = 'flex';
-    if (mediaQuery.matches) {
-        navOpen.style.display = 'none';
-    }
 }
 
 navOpen.addEventListener('click', open);
 navClose.addEventListener('click', close);
+
+window.onresize = () => {
+    if (mediaQuery.matches) {
+        navOpen.style.display = 'none';
+        navClose.style.display = 'none';
+    } else
+    navOpen.style.display = 'flex';
+};
