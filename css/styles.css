@@ -16,13 +16,6 @@ header {
     text-align: center;
 }
 
-.hidden {
-    display:none;
-}
-
-.disflex {
-    display:flex;
-}
 
 body {
     color: #000;
@@ -98,14 +91,34 @@ nav ul li a{
     transform: translate(-50%, -50%);
 }
 
+.hero-text li {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+}
+
+.btn-light {
+    color: #fff;
+    background-color: #89c94b;
+    margin-top: 20px;
+    text-align: center;
+    padding: 18px 12px 10px 12px;
+    position:inherit;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.btn-light:hover {
+    background-color: #56992d;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
 /* --- Mobile --- */
 
 @media only screen and (min-width: 320px) and (max-width: 899px) {
-
-    html, body {
-        width: fit-content;
-    }
-
     nav ul {
         display: block;
         margin-top: 59px;
@@ -130,6 +143,11 @@ nav ul li a{
         top: 20px;
         margin-right: 20px;
         margin-top: 9px; 
+    }
+
+    .hero-text {
+        font-size: 20px;
+        margin: auto 15px;
     }
 
 }
@@ -185,12 +203,16 @@ nav ul li a{
     .mobile-nav-close {
         display: none;
     }
-
 }
 
+/* --- Intermediate breakpoint --- */
 @media only screen and (min-width: 1050px){
     nav ul li a {
         font-size: 16px;
+    }
+
+    .hero-text {
+        margin: auto 20px;
     }
 }
 
