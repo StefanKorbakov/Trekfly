@@ -33,7 +33,6 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     background-attachment: scroll;
-    /* flex-wrap: wrap; */
 }
 
 .logo{
@@ -135,6 +134,11 @@ h2 {
     display: inline-block;
 }
 
+h2 span {
+    border-bottom: #246c11 3px solid;
+}
+
+
 h3 {
     margin: auto 15px;
     max-width: inherit;
@@ -142,24 +146,46 @@ h3 {
     font-weight: 300;
 }
 
-/* .image-container {
-    margin: 20px 15px;
-    background-image: url(/img/trekking_goals.jpg);
-    height: 300px;
-    width: 100%;   
-    background-size: 100%;
-    background-repeat: no-repeat;
-    object-fit: contain;
-    box-shadow: 0 0 18px 18px #fff inset;
-} */
-
 .section-goals img {
     margin: 20px 15px;
     height: 100%;
-    width: 100%;
+    width: 70%;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+}
+
+/* --- Section about us --- */
+
+
+.section-about-us {
+    display: flex;
+    background-color: #c2d6b3;
+    width: fit-content;
+    height: fit-content;   
+    flex-direction: column;
+}
+
+.section-about-us h2 {
+    display: inline-block;
+    text-align: center;
+    border-bottom: none;
+}
+
+.section-about-us div {
+    display: flex;
+    text-align: center;
+}
+
+.section-about-us h2 {
+    margin-top: 20px;
+}
+
+.section-about-us img {
+    margin: 20px 15px;
+    height: auto;
+    width:40%;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 /* --- Mobile --- */
@@ -195,15 +221,16 @@ h3 {
         font-size: 20px;
     }
 
-    /* .image-container {
-        height: 250px;
-    } */
+    .section-about-us div {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .section-about-us img {
+        width: 96%;
+    }
 
 }
-
-/* --- Intermediate breakpoints --- */
-
-
 
 /* --- Small tablets ---*/
 
@@ -271,6 +298,10 @@ h3 {
     .hero-text {
         margin: auto 20px;
     }
+
+    .section-about-us h3 {
+        margin: auto 150px;
+    }
 }
 
 /* --- Tablets / Desktops ---*/
@@ -304,5 +335,9 @@ h3 {
 
     .section-goals {
         margin: 30 80px;
+    }
+
+    .section-about-us h3{
+        margin: auto 200px;
     }
 }
