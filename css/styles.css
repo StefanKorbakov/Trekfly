@@ -115,6 +115,23 @@ nav ul li a{
     transition: ease 0.5s;
 }
 
+.btn-dark {
+    color: #fff;
+    font-size: 40px;
+    background-color: #246c13;
+    text-align: center;
+    padding: 15px 25px 10px 25px;
+    font-weight: 900;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.btn-dark:hover {
+    background-color: #89c94b;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
 /* --- Sections --- */
 
 .section-goals {
@@ -130,14 +147,12 @@ h2 {
     color: #246c11;
     margin-bottom: 20px;
     font-style: oblique;
-    border-bottom: #246c11 3px solid;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 h2 span {
     border-bottom: #246c11 3px solid;
 }
-
 
 h3 {
     margin: auto 15px;
@@ -188,6 +203,40 @@ h3 {
     border-radius: 15px;
 }
 
+/* --- Section top destinations --- */
+
+.section-top-destinations {
+    margin: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.destinations {
+    display: flex;
+    flex-direction: column;    
+}
+
+.destinations h2 {
+    font-family: "Oswald";
+    color: #307470;
+    margin-bottom: 0;
+}
+
+.destinations img {
+    margin:  20px auto;
+    height: auto;
+    width: 75%;
+    border-radius: 15px 50px;
+}
+
+.d-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto 20px auto;
+}
+
 /* --- Mobile --- */
 
 @media only screen and (min-width: 320px) and (max-width: 899px) {
@@ -227,7 +276,18 @@ h3 {
     }
 
     .section-about-us img {
-        width: 96%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .destinations h2 {
+        font-size: 15px;
+    }
+
+    .btn-dark {
+        font-size: 20px;
+        width: fit-content;
     }
 
 }
@@ -286,6 +346,43 @@ h3 {
 
     .section-goals {
         margin: 20px 30px;
+    }
+
+    .destinations {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex: 1 1 300px;
+    }
+
+    .d-box {
+        display: table;
+        width: 30%;
+    }
+
+    .destinations img {
+        display: block;
+        flex: 1;
+        margin: 10px;
+        height: auto;
+        width: 100%;
+        border-radius: 10px 50px;
+    }
+
+    img.gransasso {
+        margin-top: 17px;
+    }
+
+    .btn-dark {
+        font-size: 15px;
+        margin-left: 40px;
+    }
+}
+
+
+/* --- Intermediate breakpoint --- */
+@media only screen and (min-width: 900px) and (max-width: 1160px) {
+    .destinations h2 {
+        font-size: 15px;
     }
 }
 
