@@ -299,6 +299,53 @@ cite img {
     border-radius: 50%;
 }
 
+/* --- Section contact form --- */
+
+.section-contact-form {
+    background-color: #f2f2f2;
+}
+
+.section-contact-form h2{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+.form-box label {
+    position: absolute;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact-form .btn-light {
+    width: 40%;
+    margin: auto auto;
+    padding-bottom: 15px;
+}
+
 /* --- Mobile --- */
 
 @media only screen and (min-width: 320px) and (max-width: 899px) {
@@ -445,6 +492,15 @@ cite img {
 
     .reviews {
         flex-direction: row;
+    }
+
+    .contact-form {
+        width: 50%;
+        margin: auto auto;
+    }
+
+    .contact-form .btn-light {
+        width: 30%;
     }
 }
 
