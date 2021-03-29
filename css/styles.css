@@ -346,6 +346,69 @@ textarea {
     padding-bottom: 15px;
 }
 
+/* --- Footer --- */
+
+footer {
+    background-color: rgb(78, 78, 78);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+}
+
+footer li {
+    list-style: none;
+}
+
+.upperf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footlinks{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px;
+}
+
+.footlinks a {
+    color: rgb(150, 150, 150);
+    padding: 5px;
+}
+
+.socicons {
+    display: flex;
+    justify-content: center;
+}
+
+.socicons a{
+    padding: 10px 20px 20px 20px;
+    font-size: 30px;
+    color: rgb(150, 150, 150);
+}
+
+.facebook:hover {
+    color: #3b5998;
+    transition: ease 0.5s;
+}
+
+.twitter:hover {
+    color: #1da1f2;
+    transition: ease 0.5s;
+}
+
+.instagram:hover {
+    color: #3b5998;
+    transition: ease 0.5s;
+}
+
+footer p {
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgb(150, 150, 150);
+}
+
 /* --- Mobile --- */
 
 @media only screen and (min-width: 320px) and (max-width: 899px) {
@@ -401,6 +464,10 @@ textarea {
 
     blockquote {
         font-size: 15px;
+    }
+
+    footer {
+        height: 160px;
     }
 
 }
@@ -502,6 +569,23 @@ textarea {
     .contact-form .btn-light {
         width: 30%;
     }
+
+    .upperf {
+        flex-direction: row;
+    }
+
+    .footlinks {
+        padding: 30px;
+    }
+
+    .footlinks li {
+        padding-right: 20px;
+    }
+
+    .socicons {
+        padding-top: 20px;
+        padding-right: 30px;
+    }
 }
 
 
@@ -566,5 +650,9 @@ textarea {
 
     .btn-dark {
         margin-top: 20px;
+    }
+
+    .contact-form .btn-light {
+        width: 20%;
     }
 }
