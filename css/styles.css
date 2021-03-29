@@ -70,7 +70,7 @@ nav ul li a{
 }
 
 .hero-box {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(/img/trekking_main.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../img/trekking_main.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -240,7 +240,7 @@ h3 {
 /* --- Section top destinations --- */
 
 .section-our-reviews {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/trekking_reviews.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/trekking_reviews.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
