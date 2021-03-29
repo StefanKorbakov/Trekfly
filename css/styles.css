@@ -33,6 +33,10 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     background-attachment: scroll;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 100;
 }
 
 .logo{
@@ -59,6 +63,13 @@ nav ul li a{
     text-shadow: 1px 0 #888888;
     color: #56992d;
     text-transform: uppercase;
+}
+
+.nav-items {
+    border: #246c11 5px solid;
+    padding-top: 8px;
+    border-left: none;
+    border-right: none;
 }
 
 .mobile-nav-icon {
@@ -477,6 +488,7 @@ footer p {
 @media only screen and (min-width: 900px){
     nav {
         height:100px;
+        border-bottom: #246c11 5px solid;
     }
 
     .nav-items {
@@ -487,6 +499,10 @@ footer p {
 
     .logo {
         margin-top: 15px;
+    }
+
+    .nav-items {
+        border: none;
     }
     
     nav ul {
