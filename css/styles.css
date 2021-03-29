@@ -152,6 +152,8 @@ nav ul li a{
     flex-direction: column;
     text-align: center;
     margin: 20px 20px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
@@ -178,10 +180,9 @@ h3 {
     margin: 20px 15px;
     height: 100%;
     width: 70%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 15px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
@@ -191,7 +192,11 @@ h3 {
 .section-about-us {
     display: flex;
     background-color: #c2d6b3;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;   
     flex-direction: column;
 }
@@ -215,10 +220,9 @@ h3 {
     margin: 20px 15px;
     height: auto;
     width:40%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 15px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
@@ -247,8 +251,6 @@ h3 {
     height: auto;
     width: 75%;
     border-radius: 15px 50px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
@@ -470,6 +472,8 @@ footer p {
 
     .btn-dark {
         font-size: 20px;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
 
