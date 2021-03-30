@@ -390,6 +390,11 @@ footer li {
     padding: 5px;
 }
 
+.footlinks a:hover {
+    color:#fff;
+    transition: ease 1s;
+}
+
 .socicons {
     display: flex;
     justify-content: center;
@@ -403,17 +408,17 @@ footer li {
 
 .facebook:hover {
     color: #3b5998;
-    transition: ease 0.5s;
+    transition: ease 1s;
 }
 
 .twitter:hover {
     color: #1da1f2;
-    transition: ease 0.5s;
+    transition: ease 1s;
 }
 
 .instagram:hover {
-    color: #3b5998;
-    transition: ease 0.5s;
+    color: #c32aa3;
+    transition: ease 1s;
 }
 
 footer p {
