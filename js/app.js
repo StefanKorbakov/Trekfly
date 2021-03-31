@@ -17,6 +17,13 @@ function close() {
 
 navOpen.addEventListener('click', open);
 navClose.addEventListener('click', close);
+document.addEventListener('click', () => {
+    if (navItems.style.top = '0%') {
+        navOpen.style.display = 'flex';
+        navClose.style.display = 'none';
+        navItems.style.top = '-100%';
+    }
+}, true);
 
 window.onresize = () => {
     if (mediaQuery.matches) {
